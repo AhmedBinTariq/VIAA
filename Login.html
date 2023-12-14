@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        .flex_container{
+            height:90vh;
+            
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .flex_container1{
+            height:80vh;
+             width: 25%;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .item{
+            margin-bottom: 50px;
+        }
+
+        .image{
+            margin-top:0;
+            margin-bottom: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; margin-top: 5px;">Welcome Admin!</h1>
+    <div class="flex_container">
+        <div class="flex_container1">
+            <img class="image" src="A:\Artificial Intelligence\Prototype\Admin\viaa-high-resolution-logo-transparent.png" width="100px" alt="">
+            <form action="">
+                <label for="email" >Enter Email </label>
+                <input class="item" type="text" name="email" id="email"> <br>
+
+                <label for="password" >Enter Password</label>
+                <input class="item" type="password" name="password" id="password">
+                <br>
+                
+                <button style=" width:100%; font-size: 20px; background-color: grey;" onclick="redirectToDashboard()" >Login</button>
+            </form>
+    
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        function redirectToDashboard(){
+            event.preventDefault();
+          window.location.href="dashboard.html";
+        }
+    </script>    
+    
+</body>
+</html>
